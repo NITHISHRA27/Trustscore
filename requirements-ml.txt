@@ -1,0 +1,11 @@
+# Optional local AI models (≈2 GB download on first use). Enable with ENABLE_HF_MODELS=true in .env
+#   - dslim/bert-base-NER                     named-entity recognition
+#   - cross-encoder/nli-deberta-v3-small      evidence stance (supports / contradicts)
+#   - sentence-transformers/all-MiniLM-L6-v2  semantic similarity
+#   - umm-maybe/AI-image-detector             AI-generated image indicator
+-r requirements.txt
+torch>=2.2
+transformers>=4.44
+# Optional extras
+# c2pa-python>=0.6      # validate C2PA Content Credentials
+# pyzbar>=0.1.9         # extra barcode formats (needs zbar DLL on Windows)
